@@ -1,6 +1,6 @@
-# Site De Portifólio (Protótipo)
+# Site De Portfólio (Protótipo)
 
-é um simples site de um portifólio
+é um simples site de um portfólio
 
 ## Ferramentas Utilizadas
 

@@ -1,0 +1,112 @@
+body {
+  font-family: 'Apple Chancery, cursive';
+  font-weight: bolder;
+  background-color: #ffffff;
+  color: rgb(62, 47, 150);
+  margin: 0; /* Remova a margem padrão do body */
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to top, #ff4500, #ff8c00, #ffd700);
+  display: flex; /* Torna o body um container flex */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  justify-content: center; /* Opcional: alinha os itens verticalmente ao centro */
+  text-align: center; /* Já estava presente, pode ser redundante com align-items */
+}
+
+p {
+  margin-bottom: 10px; /* Ajuste a margem inferior para separação */
+}
+
+.sun {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  background: radial-gradient(circle, #ffee93 0%, #ffdd55 40%, transparent 60%);
+  border-radius: 50%;
+  box-shadow: 0 0 50px 20px #ffdd55, 0 0 100px 40px rgba(255, 221, 85, 0.5);
+}
+
+.ocean {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, #1e90ff, #000080);
+  overflow: hidden;
+}
+
+.wave {
+  background: #1e90ff;
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 7em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  background-color: #000080;
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  background-color: #1e90ff;
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* "Portfólio" */
+
+.neon-text {
+  color: #957dad;
+  text-shadow: 0.5px 0.5px 0.5px #000, -0.5px 0.5px #000, 0.5px 0.5px 0.5px #000,
+    -0.5px -0.5px 0.5px #000;
+  font-size: 48px;
+}
+
+/*Texto e Caixa no Linkedin*/
+/*Texto e Caixa no Linkedin*/
+a {
+  color: #482f58;
+  font-weight: bold;
+  text-decoration: none;
+  border: 5px solid #272727;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 15px; /* Adicione esta linha para criar espaço abaixo do link */
+  display: block; /* Isso fará com que cada link ocupe uma linha inteira */
+}
+/* Quadrado do entorno do texto "Próxima Página" */
+a:hover {
+  background-color: #79d2e6;
+  color: #000;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 50px;
+}
